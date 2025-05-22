@@ -1,0 +1,3 @@
+beforeEach - Runs before each test
+afterEach - Completed: Create and archive products
+afterAll - Runs once after all tests

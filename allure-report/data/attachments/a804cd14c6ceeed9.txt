@@ -1,0 +1,5 @@
+Is Create button visible? true
+Is Ticket card visible? true
+Is Offer name input enabled? true
+Is error message visible? true
+afterEach - Completed: Validate offer creation error when name is missing

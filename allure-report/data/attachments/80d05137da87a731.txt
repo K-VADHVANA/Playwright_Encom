@@ -1,0 +1,3 @@
+beforeAll - Runs once before all tests
+beforeEach - Runs before each test
+afterEach - Completed: Verify dashboard is loaded

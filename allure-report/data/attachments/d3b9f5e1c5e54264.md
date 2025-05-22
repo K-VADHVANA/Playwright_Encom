@@ -1,0 +1,59 @@
+# Test info
+
+- Name: Create new users
+- Location: C:\Users\nipatel\Playwright\playwright-pom\tests\CreateUsers.test.ts:10:5
+
+# Error details
+
+```
+Error: page.screenshot: Target page, context or browser has been closed
+Call log:
+  - taking page screenshot
+
+    at C:\Users\nipatel\Playwright\playwright-pom\hooks\baseTest.ts:33:16
+```
+
+# Test source
+
+```ts
+   1 | // hooks/baseTest.ts
+   2 | import { test as base, expect, Page } from '@playwright/test';
+   3 | import { LoginPage } from '../pages/LoginPage';
+   4 | import { validUser } from '../utils/testData';
+   5 | import { CloudDashboardPage } from '../pages/CloudDashboardPage';
+   6 |
+   7 |
+   8 | export const test = base.extend<{}>({
+   9 |   // You can also define fixtures here if needed
+  10 | });
+  11 |
+  12 | test.beforeAll(async () => {
+  13 |   console.log('🚀 beforeAll - Runs once before all tests');
+  14 | });
+  15 |
+  16 | test.afterAll(async () => {
+  17 |   console.log('🧹 afterAll - Runs once after all tests');
+  18 | });
+  19 |
+  20 | test.beforeEach(async ({ page }) => {
+  21 |   //Login before each test
+  22 |   console.log('🚀 beforeEach - Runs once before all tests');
+  23 |   const loginPage = new LoginPage(page);
+  24 |   await loginPage.navigateToEnvisoLoginPage();
+  25 |   await loginPage.userLogin(validUser.username, validUser.password);
+  26 | });
+  27 |
+  28 | test.afterEach(async ({ page }, testInfo) => {
+  29 |   console.log(`✅ afterEach - Completed: ${testInfo.title}`);
+  30 |   page.close();
+  31 |
+  32 |   if (testInfo.status !== testInfo.expectedStatus) {
+> 33 |     await page.screenshot({ path: `screenshots/${testInfo.title}.png` });
+     |                ^ Error: page.screenshot: Target page, context or browser has been closed
+  34 |   }
+  35 |
+  36 | });
+  37 |
+  38 | export { expect };
+  39 |
+```

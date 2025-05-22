@@ -1,0 +1,4 @@
+🚀 beforeAll - Runs once before all tests
+🚀 beforeEach - Runs once before all tests
+✅ afterEach - Completed: Click on Create Offer button
+🧹 afterAll - Runs once after all tests

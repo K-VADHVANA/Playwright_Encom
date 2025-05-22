@@ -1,0 +1,3 @@
+beforeEach - Runs once before all tests
+afterEach - Completed: Successfully create a new offer
+afterAll - Runs once after all tests
