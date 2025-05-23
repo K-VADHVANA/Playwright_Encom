@@ -1,0 +1,18 @@
+{
+  "login": {
+    "username": "daksh1",
+    "password": "daksh1"
+  },
+  "product": {
+    "title": "Calvin klein Tshirt",
+    "thumbnail": "https://cdn.dummyjson.com/product-images/mens-shirts/blue-&-black-check-shirt/1.webp",
+    "description": "This is a test product description.",
+    "category": "mens-shoes",
+    "price": "100",
+    "stock": "1",
+    "discount": "10",
+    "tags": ["test"],
+    "crossProductCategory": "mens-shoes",
+    "crossProduct": "Nike Air Jordan 1 Red And Black"
+  }
+}

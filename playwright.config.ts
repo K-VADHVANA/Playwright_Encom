@@ -5,15 +5,16 @@ export default defineConfig({
   reporter: [
     ['allure-playwright'],
     ['html', { open: 'never' }]
-  ], // open: 'on', 'never', or 'always'
+  ],
   use: {
     browserName: 'chromium',
     headless: false,
-    baseURL: 'https://example.com', // Replace with your app URL
-    viewport: null, // 👈 disables default viewport
+    baseURL: 'https://example.com', // Replace with your actual app URL
+    viewport: null,
+    actionTimeout: 10000,
     launchOptions: {
-      args: ['--start-maximized'] // 👈 opens the window maximized
-    },
-    actionTimeout: 10000
-  },
+      args: ['--start-maximized'],
+      slowMo: 500 // 👈 Adds a 500ms delay between actions
+    }
+  }
 });
