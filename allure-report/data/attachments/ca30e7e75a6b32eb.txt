@@ -1,2 +1,0 @@
-🚀 beforeEach - Runs once before all tests
-✅ afterEach - Completed: Navigate to My Offers page

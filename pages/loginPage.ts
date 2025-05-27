@@ -14,6 +14,9 @@ export class LoginPage {
       loginButton: this.page.locator("#login-button")
     };
   }
+// page index
+// window index
+// swict ontext
 
   async goto() {
     await this.page.goto('http://13.232.93.41:4200/login');

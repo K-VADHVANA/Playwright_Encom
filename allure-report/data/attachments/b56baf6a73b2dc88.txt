@@ -1,4 +1,0 @@
-beforeEach - Runs once before all tests
-Is 'Archive' option visible? true
-Is 'Archive' confirm button visible? false
-afterEach - Completed: Create and archive products

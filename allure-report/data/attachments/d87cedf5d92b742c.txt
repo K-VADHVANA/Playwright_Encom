@@ -1,4 +1,0 @@
-🚀 beforeEach - Runs once before all tests
-Logging Out!
-✅ afterEach - Completed: Checking logout
-🧹 afterAll - Runs once after all tests

@@ -1,4 +1,0 @@
-beforeAll - Runs once before all tests
-beforeEach - Runs before each test
-afterEach - Completed: Successfully create a new offer
-afterAll - Runs once after all tests

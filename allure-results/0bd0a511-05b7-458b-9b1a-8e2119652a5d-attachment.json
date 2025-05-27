@@ -1,1 +1,0 @@
-{"pageSnapshot":"- main:\n  - heading [level=1]:\n    - img\n  - main:\n    - group:\n      - paragraph: Login\n      - text: Email\n      - textbox \"Email\"\n    - button \"Next\"\n    - link \"Create an account\":\n      - /url: https://sales.test-enviso.io/register?continue_url=https://cloud.test-enviso.io/register\n    - complementary:\n      - img"}
