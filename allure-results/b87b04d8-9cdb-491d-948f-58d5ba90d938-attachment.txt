@@ -1,0 +1,2 @@
+🚀 beforeAll - Runs once before all tests
+✅ afterEach - Completed: Validate dashboard URL and statistics are digits only
