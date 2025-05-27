@@ -1,0 +1,3 @@
+🚀 beforeAll - Runs once before all tests
+✅ afterEach - Completed: Validate dashboard statistics and order section
+🧹 afterAll - Runs once after all tests

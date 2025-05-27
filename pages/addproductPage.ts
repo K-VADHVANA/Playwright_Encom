@@ -43,7 +43,7 @@ export class AddProductPage {
     await this.titleInput.fill(data.title);
     await this.thumbnailInput.fill(data.thumbnail);
     await this.descriptionTextarea.fill(data.description);
-    await this.categorySelect.selectOption({ label: data.category }); // Use "category" key here
+    await this.categorySelect.selectOption({ label: data.category });
     await this.priceInput.fill(data.price);
     await this.stockInput.fill(data.stock);
     await this.discountInput.fill(data.discount);
