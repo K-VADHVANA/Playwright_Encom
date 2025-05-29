@@ -1,0 +1,1 @@
+{"pageSnapshot":"- link \"logo EnCom\":\n  - /url: \"#\"\n  - img \"logo\"\n  - text: EnCom\n- heading \"Sign in to your account\" [level=1]\n- text: Your username\n- textbox \"Your username\": admin\n- text: Password\n- textbox \"Password\": admin@123\n- button \"Sign in\"\n- paragraph:\n  - text: Don't have an account?\n  - link \"Register\":\n    - /url: /register"}

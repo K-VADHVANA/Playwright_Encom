@@ -24,7 +24,17 @@ test('Create, verify, and delete(optional) Product', async ({ page }) => {
 
   // Verify and delete product
   await productPage.openProductTab();
+<<<<<<< HEAD
   // await productPage.verifyProductAndDelete(data.title);
+=======
+<<<<<<< HEAD
+
+  // Verify the created product exists and delete it
+  // await productPage.verifyProductAndDelete(data.title);
+=======
+  await productPage.verifyProductAndDelete(data.title);
+>>>>>>> 09147e21661fa5218edf421b30d54e08edcb4ca0
+>>>>>>> 264cfd3a36b21605407007ae14accea686617bd9
 });
 
 test('Complete Purchase Flow', async ({ page }) => {

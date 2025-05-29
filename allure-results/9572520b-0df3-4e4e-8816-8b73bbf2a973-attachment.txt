@@ -1,4 +1,0 @@
-🚀 beforeAll - Runs once before all tests
-🚀 beforeEach - Logging in before each test
-✅ afterEach - Completed: Create, verify, and delete a new product
-🧹 afterAll - Runs once after all tests
