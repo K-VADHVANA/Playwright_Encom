@@ -13,7 +13,7 @@
     "description": "This is a test product description.",
     "category": "mens-shoes",
     "price": "100",
-    "stock": "1",
+    "stock": "10",
     "discount": "10",
     "tags": ["test"],
     "crossProductCategory": "mens-shoes",

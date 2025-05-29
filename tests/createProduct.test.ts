@@ -1,10 +1,13 @@
 import { test, expect } from '../hooks/baseTest';
 import { LoginPage } from '../pages/loginPage';
 import { DashboardPage } from '../pages/dashboardPage';
-import { AddProductPage } from '../pages/addproductPage';
+import { AddProductPage } from '../pages/addProductPage';
+import { HomePage } from '../pages/homePage';
+import { ProductPage } from '../pages/productPage';
+import { CartPage } from '../pages/cartPage';
 import createProductData from '../utils/createProductData.json';
 
-test('Create, verify, and delete a new product with cross product selection', async ({ page }) => {
+test('Create, verify, and delete(optional) Product', async ({ page }) => {
   const loginPage = new LoginPage(page);
   const productPage = new AddProductPage(page);
   const data = createProductData.product;
@@ -21,10 +24,37 @@ test('Create, verify, and delete a new product with cross product selection', as
 
   // Verify and delete product
   await productPage.openProductTab();
-  await productPage.verifyProductAndDelete(data.title);
+  // await productPage.verifyProductAndDelete(data.title);
 });
 
-test('Complete Dashboard Page Test', async ({ page }) => {
+test('Complete Purchase Flow', async ({ page }) => {
+  const loginPage = new LoginPage(page);
+  const homePage = new HomePage(page);
+  const productPage = new ProductPage(page);
+  const dashboardPage = new DashboardPage(page);
+  const cartPage = new CartPage(page);
+
+  await loginPage.goto();
+  await loginPage.login(createProductData.user.username, createProductData.user.password);
+
+  const productTitle = createProductData.product.title;
+
+  await homePage.searchProduct(productTitle);
+  await homePage.clickProductFromResults(productTitle);
+
+  await productPage.setQuantity('1');
+  await productPage.addToCart();
+
+  await cartPage.goToCart();
+  await cartPage.validateCartItem(productTitle);
+  await cartPage.increaseQuantity();
+  await cartPage.decreaseQuantity();
+  await cartPage.checkout();
+  await cartPage.completeRazorpayPayment();
+  await page.waitForTimeout(10000);
+});
+
+test('Dashboard Page Verification', async ({ page }) => {
   const loginPage = new LoginPage(page);
   const dashboardPage = new DashboardPage(page);
 
