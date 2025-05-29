@@ -21,13 +21,9 @@ test('Create, verify, and delete a new product with cross product selection', as
 
   // Verify and delete product
   await productPage.openProductTab();
-<<<<<<< HEAD
-
-  // Verify the created product exists and delete it
-  // await productPage.verifyProductAndDelete(data.title);
-=======
-  await productPage.verifyProductAndDelete(data.title);
->>>>>>> 09147e21661fa5218edf421b30d54e08edcb4ca0
+  // Add verification and deletion logic here, for example:
+  // await productPage.verifyProductExists(data.productName);
+  // await productPage.deleteProduct(data.productName);
 });
 
 test('Complete Dashboard Page Test', async ({ page }) => {

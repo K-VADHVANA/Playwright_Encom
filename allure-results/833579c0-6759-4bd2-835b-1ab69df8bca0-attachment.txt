@@ -1,0 +1,1 @@
+✅ afterEach - Completed: Verify dashboard statistics and navigation

@@ -1,0 +1,3 @@
+🚀 beforeAll - Runs once before all tests
+✅ afterEach - Completed: Create, verify, and delete a new product with cross product selection
+🧹 afterAll - Runs once after all tests

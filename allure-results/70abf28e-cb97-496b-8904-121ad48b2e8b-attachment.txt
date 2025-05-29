@@ -1,0 +1,2 @@
+🚀 beforeAll - Runs once before all tests
+✅ afterEach - Completed: Create a new product with cross product selection

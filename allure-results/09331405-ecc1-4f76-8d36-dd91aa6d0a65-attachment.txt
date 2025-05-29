@@ -1,0 +1,2 @@
+✅ afterEach - Completed: Verify dashboard statistics and navigation
+🧹 afterAll - Runs once after all tests
