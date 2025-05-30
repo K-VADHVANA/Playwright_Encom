@@ -1,0 +1,6 @@
+🚀 beforeAll - Runs once before all tests
+✅ Clicked Netbanking
+✅ Razorpay popup loaded with URL: about:blank
+✅ Clicked 'Success' button
+✅ afterEach - Completed: Complete Purchase Flow
+🧹 afterAll - Runs once after all tests

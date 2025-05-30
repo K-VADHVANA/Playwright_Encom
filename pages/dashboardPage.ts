@@ -15,8 +15,8 @@ export class DashboardPage {
     this.latestOrdersTitle = page.getByRole('heading', { name: 'Latest Orders' });
     this.viewAllButton = page.locator('#view-all-button');
     this.firstOrderDropdown = page.locator('#status-select-1');
-    this.notificationBell = page.locator('#notification-toggle-button'); // ✅ Step 7
-    this.closeNotificationButtons = page.locator('button:has-text("×")'); // ✅ Step 8
+    this.notificationBell = page.locator('#notification-toggle-button');
+    this.closeNotificationButtons = page.locator('button:has-text("×")');
   }
 
   async validateDashboardUrl() {
