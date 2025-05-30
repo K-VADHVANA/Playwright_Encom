@@ -1,0 +1,5 @@
+🚀 beforeAll - Runs once before all tests
+🚀 beforeEach - Test starting
+Available status options: Pending, Processing, Completed
+✅ afterEach - Completed: Dashboard Page Verification
+🧹 afterAll - Runs once after all tests

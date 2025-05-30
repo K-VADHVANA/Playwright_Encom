@@ -1,0 +1,4 @@
+🚀 beforeAll - Runs once before all tests
+🚀 beforeEach - Test starting
+✅ afterEach - Completed: Complete Purchase Flow
+🧹 afterAll - Runs once after all tests
